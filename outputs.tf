@@ -10,17 +10,13 @@ output "server_id" {
 output "role_ids" {
   description = "IDs des rôles (à utiliser par le bot pour attribution)"
   value = {
-    bot               = discord_role.bot_role.id
-    admin             = discord_role.admin_role.id
-    conseil           = discord_role.conseil_role.id
-    officier_alliance = discord_role.officier_alliance_role.id
-    lock_down_membre  = discord_role.lock_down_membre_role.id
-    lock_down_staff   = discord_role.lock_down_staff_role.id
-    urssaf_membre     = discord_role.urssaf_membre_role.id
-    urssaf_staff      = discord_role.urssaf_staff_role.id
-    membre            = discord_role.membre_role.id
-    incomer           = discord_role.incomer_role.id
-    noptt             = discord_role.noptt_role.id
+    bot              = discord_role.bot_role.id
+    admin            = discord_role.admin_role.id
+    lock_down_membre = discord_role.lock_down_membre_role.id
+    lock_down_staff  = discord_role.lock_down_staff_role.id
+    urssaf_membre    = discord_role.urssaf_membre_role.id
+    urssaf_staff     = discord_role.urssaf_staff_role.id
+    noptt            = discord_role.noptt_role.id
   }
   sensitive = false
 }

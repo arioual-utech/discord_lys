@@ -10,7 +10,7 @@ Les rôles par guilde sont créés ici et **attribués automatiquement par un bo
 ├── provider.tf              # Provider Discord + variables (token, server_id)
 ├── versions.tf              # Terraform Cloud + versions
 ├── locals.tf                # role_ids, presets de permissions
-├── roles.tf                 # Rôles (bot, staff alliance, guildes, membre, incomer)
+├── roles.tf                 # Rôles (bot, admin, guildes Lock Down/Urssaf, noptt)
 ├── outputs.tf               # server_id, role_ids, channel_ids (pour le bot)
 │
 ├── channels_public.tf       # Public (rules, annonces, chat)
@@ -44,20 +44,18 @@ Le state est géré sur **Terraform Cloud** :
 |---------------------|--------|
 | **bot**             | Rôle technique pour les bots |
 | **admin**           | Admin technique Discord |
-| **Conseil**         | Staff alliance (équivalent GM) |
-| **Officier Alliance** | Officiers de l’alliance |
-| **Lys** (et autres) | Rôles guilde — **attribués par le bot** |
-| **Membre**          | Membre de l’alliance |
-| **Incomer**         | Nouveaux arrivants |
+| **Membre Lock Down** / **Staff Lock Down** | Guilde Lock Down — **attribués par le bot** |
+| **Membre Urssaf** / **Staff Urssaf** | Guilde Urssaf — **attribués par le bot** |
+| **noptt**           | Exemption PTT (détection vocale autorisée dans Massup) |
 
-Pour ajouter une guilde : dupliquer un bloc `discord_role "guilde_xxx_role"` dans `roles.tf` et l’ajouter dans `locals.tf` (`role_ids`) et dans `outputs.tf` (`role_ids`).
+Pour ajouter une guilde : dupliquer les blocs membre + staff dans `roles.tf`, puis les ajouter dans `locals.tf` et `outputs.tf`.
 
 ## Canaux
 
 | Catégorie       | Canaux |
 |-----------------|--------|
 | **Public**      | rules, annonces, chat |
-| **Staff Alliance** | staff-général (Conseil + Officiers) |
+| **Staff Alliance** | staff-général (caché, sans accès pour l’instant) |
 
 ## Utilisation
 

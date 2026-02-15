@@ -1,6 +1,6 @@
 # =============================================================================
 # CATÉGORIE: STAFF ALLIANCE
-# Salons réservés au Conseil et Officiers alliance.
+# Cachée à tous (aucun rôle n’a accès pour l’instant).
 # =============================================================================
 
 resource "discord_category_channel" "staff_cat" {
@@ -12,37 +12,12 @@ resource "discord_category_channel" "staff_cat" {
   }
 }
 
-# Caché à tous sauf staff alliance (Conseil, Officier)
 resource "discord_channel_permission" "staff_cat_everyone_perm" {
   channel_id   = discord_category_channel.staff_cat.id
   type         = "role"
   overwrite_id = local.role_ids.everyone
   allow        = local.perms.none
   deny         = local.perms.deny_view
-}
-
-resource "discord_channel_permission" "staff_cat_incomer_perm" {
-  channel_id   = discord_category_channel.staff_cat.id
-  type         = "role"
-  overwrite_id = local.role_ids.incomer
-  allow        = local.perms.none
-  deny         = local.perms.deny_view
-}
-
-resource "discord_channel_permission" "staff_cat_conseil_perm" {
-  channel_id   = discord_category_channel.staff_cat.id
-  type         = "role"
-  overwrite_id = local.role_ids.conseil
-  allow        = local.perms.staff_view
-  deny         = local.perms.none
-}
-
-resource "discord_channel_permission" "staff_cat_officier_perm" {
-  channel_id   = discord_category_channel.staff_cat.id
-  type         = "role"
-  overwrite_id = local.role_ids.officier_alliance
-  allow        = local.perms.staff_view
-  deny         = local.perms.none
 }
 
 resource "discord_text_channel" "staff_general_text" {

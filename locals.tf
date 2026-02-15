@@ -6,11 +6,7 @@
 locals {
   role_ids = {
     everyone = var.server_id
-
-    # Staff alliance
-    conseil           = discord_role.conseil_role.id
-    officier_alliance = discord_role.officier_alliance_role.id
-    admin             = discord_role.admin_role.id
+    admin    = discord_role.admin_role.id
 
     # Rôles guilde (bot)
     lock_down_membre = discord_role.lock_down_membre_role.id
@@ -18,11 +14,8 @@ locals {
     urssaf_membre    = discord_role.urssaf_membre_role.id
     urssaf_staff     = discord_role.urssaf_staff_role.id
 
-    # Membres
-    membre  = discord_role.membre_role.id
-    incomer = discord_role.incomer_role.id
-    noptt   = discord_role.noptt_role.id
-    bot     = discord_role.bot_role.id
+    noptt = discord_role.noptt_role.id
+    bot   = discord_role.bot_role.id
   }
 
   # Permissions Discord (presets réutilisables)
@@ -48,7 +41,6 @@ locals {
     voice_basic      = 36701184
     voice_with_vad   = 36701184 + 33554432  # vocal + détection vocale (pour noptt)
     public_read      = 309237713920
-    staff_view       = 1049600
     forum_read_write = 274877975616
   }
 }

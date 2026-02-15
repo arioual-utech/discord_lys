@@ -12,29 +12,13 @@ resource "discord_category_channel" "textuel_alliance_cat" {
   }
 }
 
-# Caché à @everyone et Incomer ; visible uniquement avec un rôle membre ou staff
+# Caché à @everyone ; visible uniquement avec un rôle membre ou staff de guilde
 resource "discord_channel_permission" "textuel_alliance_cat_everyone_perm" {
   channel_id   = discord_category_channel.textuel_alliance_cat.id
   type         = "role"
   overwrite_id = local.role_ids.everyone
   allow        = local.perms.none
   deny         = local.perms.deny_view
-}
-
-resource "discord_channel_permission" "textuel_alliance_cat_incomer_perm" {
-  channel_id   = discord_category_channel.textuel_alliance_cat.id
-  type         = "role"
-  overwrite_id = local.role_ids.incomer
-  allow        = local.perms.none
-  deny         = local.perms.deny_view
-}
-
-resource "discord_channel_permission" "textuel_alliance_cat_membre_perm" {
-  channel_id   = discord_category_channel.textuel_alliance_cat.id
-  type         = "role"
-  overwrite_id = local.role_ids.membre
-  allow        = local.perms.text_read_write
-  deny         = local.perms.none
 }
 
 resource "discord_channel_permission" "textuel_alliance_cat_lock_down_membre_perm" {
@@ -65,22 +49,6 @@ resource "discord_channel_permission" "textuel_alliance_cat_urssaf_staff_perm" {
   channel_id   = discord_category_channel.textuel_alliance_cat.id
   type         = "role"
   overwrite_id = local.role_ids.urssaf_staff
-  allow        = local.perms.text_read_write
-  deny         = local.perms.none
-}
-
-resource "discord_channel_permission" "textuel_alliance_cat_conseil_perm" {
-  channel_id   = discord_category_channel.textuel_alliance_cat.id
-  type         = "role"
-  overwrite_id = local.role_ids.conseil
-  allow        = local.perms.text_read_write
-  deny         = local.perms.none
-}
-
-resource "discord_channel_permission" "textuel_alliance_cat_officier_alliance_perm" {
-  channel_id   = discord_category_channel.textuel_alliance_cat.id
-  type         = "role"
-  overwrite_id = local.role_ids.officier_alliance
   allow        = local.perms.text_read_write
   deny         = local.perms.none
 }
