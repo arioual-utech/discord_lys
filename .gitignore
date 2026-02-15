@@ -1,6 +1,5 @@
 # Terraform
 *.tfstate
-*.tfstate.*
 *.tfvars
 .terraform/
 crash.log

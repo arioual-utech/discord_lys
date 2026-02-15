@@ -1,0 +1,1578 @@
+{
+    "version":  4,
+    "terraform_version":  "1.14.5",
+    "serial":  3,
+    "lineage":  "5bf3ba79-25a9-3c92-119b-5dd689c07cda",
+    "outputs":  {
+                    "channel_ids":  {
+                                        "value":  {
+                                                      "annonce":  "1472666648224862321",
+                                                      "annonces":  "1472660756062273607",
+                                                      "build_forum":  "1472666650259226767",
+                                                      "chat":  "1472660755370213397",
+                                                      "discussion":  "1472666646999990571",
+                                                      "event":  "1472666649374228592",
+                                                      "rules":  "1472660756595085313",
+                                                      "staff":  "1472660756955922566"
+                                                  },
+                                        "type":  [
+                                                     "object",
+                                                     {
+                                                         "annonce":  "string",
+                                                         "annonces":  "string",
+                                                         "build_forum":  "string",
+                                                         "chat":  "string",
+                                                         "discussion":  "string",
+                                                         "event":  "string",
+                                                         "rules":  "string",
+                                                         "staff":  "string"
+                                                     }
+                                                 ]
+                                    },
+                    "role_ids":  {
+                                     "value":  {
+                                                   "admin":  "1472660725200584757",
+                                                   "bot":  "1472660723678052466",
+                                                   "lock_down_membre":  "1472666647910420707",
+                                                   "lock_down_staff":  "1472666646098214932",
+                                                   "noptt":  "1472666649575424084",
+                                                   "urssaf_membre":  "1472666652159115274",
+                                                   "urssaf_staff":  "1472666650456101136"
+                                               },
+                                     "type":  [
+                                                  "object",
+                                                  {
+                                                      "admin":  "string",
+                                                      "bot":  "string",
+                                                      "lock_down_membre":  "string",
+                                                      "lock_down_staff":  "string",
+                                                      "noptt":  "string",
+                                                      "urssaf_membre":  "string",
+                                                      "urssaf_staff":  "string"
+                                                  }
+                                              ]
+                                 },
+                    "server_id":  {
+                                      "value":  "1471995085897076820",
+                                      "type":  "string"
+                                  }
+                },
+    "resources":  [
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_category_channel",
+                          "name":  "information_cat",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "id":  "1472666645544829098",
+                                                                   "name":  "Information",
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "type":  "category"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_category_channel",
+                          "name":  "public_cat",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "channel_id":  "1472660720524070913",
+                                                                   "id":  "1472660720524070913",
+                                                                   "name":  "Public",
+                                                                   "position":  2,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "type":  "category"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_category_channel",
+                          "name":  "staff_cat",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "channel_id":  "1472660744905687182",
+                                                                   "id":  "1472660744905687182",
+                                                                   "name":  "Staff Alliance",
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "type":  "category"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_category_channel",
+                          "name":  "textuel_alliance_cat",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "id":  "1472666644701773968",
+                                                                   "name":  "Textuel alliance",
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "type":  "category"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_conseil_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  274877975616,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666645544829098:1472666650976456838:role",
+                                                                   "overwrite_id":  "1472666650976456838",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_everyone_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  0,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  1049600,
+                                                                   "id":  "1472666645544829098:1471995085897076820:role",
+                                                                   "overwrite_id":  "1471995085897076820",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_incomer_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  0,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  1049600,
+                                                                   "id":  "1472666645544829098:1472666649164386505:role",
+                                                                   "overwrite_id":  "1472666649164386505",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_lock_down_membre_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  274877975616,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666645544829098:1472666647910420707:role",
+                                                                   "overwrite_id":  "1472666647910420707",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_lock_down_staff_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  274877975616,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666645544829098:1472666646098214932:role",
+                                                                   "overwrite_id":  "1472666646098214932",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_membre_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  274877975616,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666645544829098:1472660722218696864:role",
+                                                                   "overwrite_id":  "1472660722218696864",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_officier_alliance_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  274877975616,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666645544829098:1472666646991732931:role",
+                                                                   "overwrite_id":  "1472666646991732931",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_urssaf_membre_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  274877975616,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666645544829098:1472666652159115274:role",
+                                                                   "overwrite_id":  "1472666652159115274",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "information_cat_urssaf_staff_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  274877975616,
+                                                                   "channel_id":  "1472666645544829098",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666645544829098:1472666650456101136:role",
+                                                                   "overwrite_id":  "1472666650456101136",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "public_cat_everyone_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  309237713920,
+                                                                   "channel_id":  "1472660720524070913",
+                                                                   "deny":  0,
+                                                                   "id":  "1472660720524070913:1471995085897076820:role",
+                                                                   "overwrite_id":  "1471995085897076820",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.public_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "staff_cat_conseil_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1049600,
+                                                                   "channel_id":  "1472660744905687182",
+                                                                   "deny":  0,
+                                                                   "id":  "1472660744905687182:1472666650976456838:role",
+                                                                   "overwrite_id":  "1472666650976456838",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.staff_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "staff_cat_everyone_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  0,
+                                                                   "channel_id":  "1472660744905687182",
+                                                                   "deny":  1049600,
+                                                                   "id":  "1472660744905687182:1471995085897076820:role",
+                                                                   "overwrite_id":  "1471995085897076820",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.staff_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "staff_cat_incomer_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  0,
+                                                                   "channel_id":  "1472660744905687182",
+                                                                   "deny":  1049600,
+                                                                   "id":  "1472660744905687182:1472666649164386505:role",
+                                                                   "overwrite_id":  "1472666649164386505",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.staff_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "staff_cat_officier_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1049600,
+                                                                   "channel_id":  "1472660744905687182",
+                                                                   "deny":  0,
+                                                                   "id":  "1472660744905687182:1472666646991732931:role",
+                                                                   "overwrite_id":  "1472666646991732931",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.staff_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_conseil_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1115136,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666644701773968:1472666650976456838:role",
+                                                                   "overwrite_id":  "1472666650976456838",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_everyone_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  0,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  1049600,
+                                                                   "id":  "1472666644701773968:1471995085897076820:role",
+                                                                   "overwrite_id":  "1471995085897076820",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_incomer_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  0,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  1049600,
+                                                                   "id":  "1472666644701773968:1472666649164386505:role",
+                                                                   "overwrite_id":  "1472666649164386505",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_lock_down_membre_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1115136,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666644701773968:1472666647910420707:role",
+                                                                   "overwrite_id":  "1472666647910420707",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_lock_down_staff_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1115136,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666644701773968:1472666646098214932:role",
+                                                                   "overwrite_id":  "1472666646098214932",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_membre_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1115136,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666644701773968:1472660722218696864:role",
+                                                                   "overwrite_id":  "1472660722218696864",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_officier_alliance_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1115136,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666644701773968:1472666646991732931:role",
+                                                                   "overwrite_id":  "1472666646991732931",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_urssaf_membre_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1115136,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666644701773968:1472666652159115274:role",
+                                                                   "overwrite_id":  "1472666652159115274",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_channel_permission",
+                          "name":  "textuel_alliance_cat_urssaf_staff_perm",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "allow":  1115136,
+                                                                   "channel_id":  "1472666644701773968",
+                                                                   "deny":  0,
+                                                                   "id":  "1472666644701773968:1472666650456101136:role",
+                                                                   "overwrite_id":  "1472666650456101136",
+                                                                   "type":  "role"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat",
+                                                                     "discord_role.admin_role",
+                                                                     "discord_role.bot_role",
+                                                                     "discord_role.conseil_role",
+                                                                     "discord_role.incomer_role",
+                                                                     "discord_role.lock_down_membre_role",
+                                                                     "discord_role.lock_down_staff_role",
+                                                                     "discord_role.membre_role",
+                                                                     "discord_role.noptt_role",
+                                                                     "discord_role.officier_alliance_role",
+                                                                     "discord_role.urssaf_membre_role",
+                                                                     "discord_role.urssaf_staff_role"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_forum_channel",
+                          "name":  "build_forum",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "category":  "1472666645544829098",
+                                                                   "channel_id":  "1472666650259226767",
+                                                                   "id":  "1472666650259226767",
+                                                                   "name":  "build",
+                                                                   "nsfw":  false,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "sync_perms_with_category":  true,
+                                                                   "topic":  null,
+                                                                   "type":  "forum"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.information_cat"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "admin_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  0,
+                                                                   "hoist":  false,
+                                                                   "id":  "1472660725200584757",
+                                                                   "managed":  false,
+                                                                   "mentionable":  false,
+                                                                   "name":  "admin",
+                                                                   "permissions":  8,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "bot_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  3066993,
+                                                                   "hoist":  true,
+                                                                   "id":  "1472660723678052466",
+                                                                   "managed":  false,
+                                                                   "mentionable":  false,
+                                                                   "name":  "bot",
+                                                                   "permissions":  0,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "conseil_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  16711684,
+                                                                   "hoist":  true,
+                                                                   "id":  "1472666650976456838",
+                                                                   "managed":  false,
+                                                                   "mentionable":  true,
+                                                                   "name":  "Conseil",
+                                                                   "permissions":  8864262743130103,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "incomer_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  0,
+                                                                   "hoist":  false,
+                                                                   "id":  "1472666649164386505",
+                                                                   "managed":  false,
+                                                                   "mentionable":  false,
+                                                                   "name":  "Incomer",
+                                                                   "permissions":  0,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "lock_down_membre_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  3447003,
+                                                                   "hoist":  true,
+                                                                   "id":  "1472666647910420707",
+                                                                   "managed":  false,
+                                                                   "mentionable":  false,
+                                                                   "name":  "Membre Lock Down",
+                                                                   "permissions":  0,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "lock_down_staff_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  15105570,
+                                                                   "hoist":  true,
+                                                                   "id":  "1472666646098214932",
+                                                                   "managed":  false,
+                                                                   "mentionable":  true,
+                                                                   "name":  "Staff Lock Down",
+                                                                   "permissions":  2248741901291529,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "membre_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  7419530,
+                                                                   "hoist":  false,
+                                                                   "id":  "1472660722218696864",
+                                                                   "managed":  false,
+                                                                   "mentionable":  false,
+                                                                   "name":  "Membre",
+                                                                   "permissions":  40585397784128,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "noptt_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  0,
+                                                                   "hoist":  false,
+                                                                   "id":  "1472666649575424084",
+                                                                   "managed":  false,
+                                                                   "mentionable":  false,
+                                                                   "name":  "noptt",
+                                                                   "permissions":  0,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "officier_alliance_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  15105570,
+                                                                   "hoist":  true,
+                                                                   "id":  "1472666646991732931",
+                                                                   "managed":  false,
+                                                                   "mentionable":  true,
+                                                                   "name":  "Officier Alliance",
+                                                                   "permissions":  2248473465835073,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "urssaf_membre_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  15844367,
+                                                                   "hoist":  true,
+                                                                   "id":  "1472666652159115274",
+                                                                   "managed":  false,
+                                                                   "mentionable":  false,
+                                                                   "name":  "Membre Urssaf",
+                                                                   "permissions":  0,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_role",
+                          "name":  "urssaf_staff_role",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "color":  15105570,
+                                                                   "hoist":  true,
+                                                                   "id":  "1472666650456101136",
+                                                                   "managed":  false,
+                                                                   "mentionable":  true,
+                                                                   "name":  "Staff Urssaf",
+                                                                   "permissions":  2248741901291529,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA=="
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_text_channel",
+                          "name":  "annonces_text",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "category":  "1472660720524070913",
+                                                                   "channel_id":  "1472660756062273607",
+                                                                   "id":  "1472660756062273607",
+                                                                   "name":  "annonces",
+                                                                   "nsfw":  false,
+                                                                   "position":  3,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "sync_perms_with_category":  true,
+                                                                   "topic":  "",
+                                                                   "type":  "text"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.public_cat"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_text_channel",
+                          "name":  "chat_text",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "category":  "1472660720524070913",
+                                                                   "channel_id":  "1472660755370213397",
+                                                                   "id":  "1472660755370213397",
+                                                                   "name":  "chat",
+                                                                   "nsfw":  false,
+                                                                   "position":  2,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "sync_perms_with_category":  true,
+                                                                   "topic":  "",
+                                                                   "type":  "text"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.public_cat"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_text_channel",
+                          "name":  "rules_text",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "category":  "1472660720524070913",
+                                                                   "channel_id":  "1472660756595085313",
+                                                                   "id":  "1472660756595085313",
+                                                                   "name":  "rules",
+                                                                   "nsfw":  false,
+                                                                   "position":  4,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "sync_perms_with_category":  true,
+                                                                   "topic":  "",
+                                                                   "type":  "text"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.public_cat"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_text_channel",
+                          "name":  "staff_general_text",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "category":  "1472660744905687182",
+                                                                   "channel_id":  "1472660756955922566",
+                                                                   "id":  "1472660756955922566",
+                                                                   "name":  "staff-g├®n├®ral",
+                                                                   "nsfw":  false,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "sync_perms_with_category":  true,
+                                                                   "topic":  "",
+                                                                   "type":  "text"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.staff_cat"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_text_channel",
+                          "name":  "textuel_alliance_annonce",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "category":  "1472666644701773968",
+                                                                   "channel_id":  "1472666648224862321",
+                                                                   "id":  "1472666648224862321",
+                                                                   "name":  "annonce",
+                                                                   "nsfw":  false,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "sync_perms_with_category":  true,
+                                                                   "topic":  null,
+                                                                   "type":  "text"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_text_channel",
+                          "name":  "textuel_alliance_discussion",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "category":  "1472666644701773968",
+                                                                   "channel_id":  "1472666646999990571",
+                                                                   "id":  "1472666646999990571",
+                                                                   "name":  "discussion",
+                                                                   "nsfw":  false,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "sync_perms_with_category":  true,
+                                                                   "topic":  null,
+                                                                   "type":  "text"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "mode":  "managed",
+                          "type":  "discord_text_channel",
+                          "name":  "textuel_alliance_event",
+                          "provider":  "provider[\"registry.terraform.io/zp-forks/discord\"]",
+                          "instances":  [
+                                            {
+                                                "schema_version":  0,
+                                                "attributes":  {
+                                                                   "category":  "1472666644701773968",
+                                                                   "channel_id":  "1472666649374228592",
+                                                                   "id":  "1472666649374228592",
+                                                                   "name":  "event",
+                                                                   "nsfw":  false,
+                                                                   "position":  1,
+                                                                   "server_id":  "1471995085897076820",
+                                                                   "sync_perms_with_category":  true,
+                                                                   "topic":  null,
+                                                                   "type":  "text"
+                                                               },
+                                                "sensitive_attributes":  [
+
+                                                                         ],
+                                                "identity_schema_version":  0,
+                                                "private":  "bnVsbA==",
+                                                "dependencies":  [
+                                                                     "discord_category_channel.textuel_alliance_cat"
+                                                                 ]
+                                            }
+                                        ]
+                      }
+                  ],
+    "check_results":  null
+}
