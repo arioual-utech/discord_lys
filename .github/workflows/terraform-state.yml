@@ -93,7 +93,7 @@ jobs:
         run: terraform init
 
       - name: State Push
-        run: terraform state push "${{ github.event.inputs.state_file_path }}"
+        run: terraform state push -force "${{ github.event.inputs.state_file_path }}"
 
       - name: Summary
         run: echo "✅ State poussé vers Terraform Cloud" >> $GITHUB_STEP_SUMMARY
