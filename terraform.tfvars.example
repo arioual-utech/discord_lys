@@ -1,0 +1,8 @@
+# Copier en terraform.tfvars (ou utiliser variables d'environnement TF_VAR_*)
+# terraform.tfvars est ignoré par git pour ne pas commiter le token.
+
+# ID du serveur Discord (Guild ID)
+server_id = "VOTRE_GUILD_ID_ICI"
+
+# Token du bot (préférer la variable d'environnement en local)
+# discord_token = "VOTRE_TOKEN_ICI"  # ou export TF_VAR_discord_token="..."

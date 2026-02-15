@@ -1,0 +1,24 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+crash.log
+crash.*.log
+tfplan
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Secrets
+.env
+*.pem
+secrets/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
