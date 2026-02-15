@@ -26,9 +26,6 @@ jobs:
   plan:
     name: Terraform Plan
     runs-on: ubuntu-latest
-    env:
-      TF_VAR_discord_token: ${{ secrets.DISCORD_BOT_TOKEN }}
-      TF_VAR_server_id: ${{ secrets.DISCORD_GUILD_ID }}
 
     steps:
       - name: Checkout
@@ -109,10 +106,6 @@ jobs:
     
     environment:
       name: production
-
-    env:
-      TF_VAR_discord_token: ${{ secrets.DISCORD_BOT_TOKEN }}
-      TF_VAR_server_id: ${{ secrets.DISCORD_GUILD_ID }}
 
     steps:
       - name: Checkout

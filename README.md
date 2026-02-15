@@ -28,14 +28,15 @@ Le state est géré sur **Terraform Cloud** :
 - Organisation : `arioual`
 - Workspace : `discord_alliance`
 
-### Variables
+### Variables (workspace Terraform Cloud)
 
-Soit dans le **workspace Terraform Cloud**, soit en **secrets GitHub** (pour la CI) :
+À définir dans **Variables** du workspace `discord_alliance` :
 
-| Variable           | Secret GitHub (optionnel) | Sensible |
-|--------------------|---------------------------|----------|
-| `discord_token`    | `DISCORD_BOT_TOKEN`       | Oui      |
-| `server_id`        | `DISCORD_GUILD_ID`        | Non      |
+| Nom | Type | Sensible | Description |
+|-----|------|----------|-------------|
+| `discord_token` | Terraform variable | Oui | Token du bot (portail développeur Discord) |
+| **ou** `DISCORD_TOKEN` | Variable d'environnement | Oui | Même token (le provider l’utilise si `discord_token` est vide) |
+| `server_id` | Terraform variable | Non | ID du serveur (Guild ID) |
 
 ## Rôles
 
