@@ -42,20 +42,45 @@ resource "discord_role" "officier_alliance_role" {
 }
 
 # --- Rôles guilde (attribution par bot) ---
-# À dupliquer ou renommer selon les guildes de l'alliance.
-resource "discord_role" "guilde_lys_role" {
+# Lock Down
+resource "discord_role" "lock_down_membre_role" {
   server_id   = var.server_id
-  name        = "Lys"
+  name        = "Membre Lock Down"
+  permissions = 0
+  color       = 3447003
+  hoist       = true
+  mentionable = false
+}
+
+resource "discord_role" "lock_down_staff_role" {
+  server_id   = var.server_id
+  name        = "Staff Lock Down"
+  permissions = 2248741901291529 # + Manage Roles (268435456)
+  color       = 15105570
+  hoist       = true
+  mentionable = true
+}
+
+# Urssaf
+resource "discord_role" "urssaf_membre_role" {
+  server_id   = var.server_id
+  name        = "Membre Urssaf"
   permissions = 0
   color       = 15844367
   hoist       = true
   mentionable = false
 }
 
-# Exemple : ajouter d'autres guildes en copiant le bloc ci-dessus
-# resource "discord_role" "guilde_xxx_role" { ... }
+resource "discord_role" "urssaf_staff_role" {
+  server_id   = var.server_id
+  name        = "Staff Urssaf"
+  permissions = 2248741901291529 # + Manage Roles (268435456)
+  color       = 15105570
+  hoist       = true
+  mentionable = true
+}
 
-# --- Membres ---
+# --- Membre alliance (générique) ---
 resource "discord_role" "membre_role" {
   server_id   = var.server_id
   name        = "Membre"
@@ -68,6 +93,16 @@ resource "discord_role" "membre_role" {
 resource "discord_role" "incomer_role" {
   server_id   = var.server_id
   name        = "Incomer"
+  permissions = 0
+  color       = 0
+  hoist       = false
+  mentionable = false
+}
+
+# Exemption PTT (Massup) : ce rôle peut utiliser la détection vocale ; les autres doivent utiliser le push-to-talk.
+resource "discord_role" "noptt_role" {
+  server_id   = var.server_id
+  name        = "noptt"
   permissions = 0
   color       = 0
   hoist       = false

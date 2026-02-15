@@ -1,6 +1,7 @@
 # =============================================================================
 # CATÉGORIE: PUBLIC
-# Salons accessibles à tous les membres de l'alliance.
+# Seule partie visible sans rôle membre ou staff (@everyone en lecture).
+# Le reste du serveur est caché (deny view) sauf pour membre/staff.
 # =============================================================================
 
 resource "discord_category_channel" "public_cat" {
